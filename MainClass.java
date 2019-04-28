@@ -32,6 +32,7 @@ public class MainClass {
         }
 
         System.out.println(neg(-5));
+        hellosay("Zhenis");
 
     }
 
@@ -43,5 +44,8 @@ public class MainClass {
             return true;
         }
         return false;
+    }
+    public static void hellosay(String name){
+        System.out.println("Привет " + name + "!");
     }
 }
