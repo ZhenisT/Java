@@ -33,7 +33,7 @@ public class MainClass {
 
         System.out.println(neg(-5));
         hellosay("Zhenis");
-
+        System.out.println(v_god(2020));
     }
 
     public static float rez(int a, int b, int c, int d){
@@ -47,5 +47,15 @@ public class MainClass {
     }
     public static void hellosay(String name){
         System.out.println("Привет " + name + "!");
+    }
+    public static boolean v_god(int z)
+    {
+        if (((z % 4 == 0) || (z % 400 == 0)) && (z % 100 > 0))
+        {
+            System.out.println("Год високосный");
+            return true;
+        }
+        System.out.println("Год не високосный");
+            return false;
     }
 }
