@@ -31,9 +31,17 @@ public class MainClass {
             System.out.println("Число положительное");
         }
 
+        System.out.println(neg(-5));
+
     }
 
     public static float rez(int a, int b, int c, int d){
         return a * (b + (c/d));
+    }
+    public static boolean neg(int x){
+        if (x < 0){
+            return true;
+        }
+        return false;
     }
 }
