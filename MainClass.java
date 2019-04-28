@@ -12,5 +12,10 @@ public class MainClass {
         char c = 'c';
         boolean bl = false;
         System.out.println("short " + s + " int " + i + " long " + l + " float " + f + " double " + d + " char " + c);
+        System.out.println(rez(10, 2, 10, 2));
+    }
+
+    public static float rez(int a, int b, int c, int d){
+        return a * (b + (c/d));
     }
 }
