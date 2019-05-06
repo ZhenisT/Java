@@ -79,6 +79,7 @@ public class Main {
         int[] arr2 = {11, 5, 35, 2, 11, 4, 5, 25, 4, 8, 9, 10};
         sumArr(arr);
         sumArr(arr2);
+	arrSdvig(arr, -2);
 
     }
     public static boolean sumArr(int[] arr){
@@ -98,4 +99,14 @@ public class Main {
 
 
     }
+    public static void arrSdvig(int[] arr3, int n){
+        n *=-1;
+        for (int j=1; j <= n; j++) {
+            int tmp = arr3[0];
+            for (int i = 0; i < arr3.length - 1; i++) {
+                arr3[i] = arr3[i + 1];
+            }
+            arr3[arr3.length - 1] = tmp;}
+        System.out.print(Arrays.toString(arr3));
+        }
 }
